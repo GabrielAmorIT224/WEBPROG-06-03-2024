@@ -1,0 +1,237 @@
+body {
+    background: #252A34;
+    height: auto;
+  
+  }
+
+.comment-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.edit-delete-buttons {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.toggle-buttons {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: blue;
+    text-decoration: underline;
+}
+
+form textarea {
+    border: 2px solid #3498db; /* Set border width and color for the textarea */
+    width: 100%; /* Make the textarea fill the width of its container */
+    padding: 10px; /* Add padding for better aesthetics */
+    border-radius: 5px; /* Optional: Add rounded corners for a softer look */
+    margin-bottom: 20px; /* Adjust spacing between the textarea and other elements */
+}
+
+
+/* Styling for the header */
+.header {
+    background-color: #16191f; /* Dark background color */
+    color: #ffffff; /* White text color */
+    display: flex;
+    justify-content: space-between; /* Align items with space in-between */
+    align-items: center; /* Center items vertically */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.btn-warning {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #263179;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #263179;
+}
+
+
+.comment-actions {
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.ellipsis-btn {
+    margin-left: auto;
+}
+
+
+.comment-text {
+    margin-right: 50px;
+    text-align: justify;
+    
+
+}
+
+
+
+.btn-success{
+    margin-bottom: 10px;
+
+}
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  :root {
+      --clr-1: #329C4E;
+      --clr-2: #2d8b46;
+      --clr-3: #26743b;
+      --clr-4: #265c5a;
+      --clr-5: #263179;
+      --clr-6: #222c6d; 
+      --clr-7: #1c2458; 
+    }
+
+
+.about-info {
+    background-color: #16191f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    position: relative;
+    color: white;
+}
+
+.about-info::before,
+.about-info::after {
+    content: "";
+    position: absolute;
+    inset: -0.5rem;
+    z-index: -1;
+    background: conic-gradient(
+        from var(--gradient-angle),
+        var(--clr-1),
+        var(--clr-2),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-6),
+        var(--clr-7)
+    );
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+}
+
+.about-info::after {
+    filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+    0% {
+        --gradient-angle: 0deg;
+    }
+    100% {
+        --gradient-angle: 360deg;
+    }
+}
+
+
+.about-info h4 {
+    color: #329C4E;
+    margin-bottom: 10px;
+}
+
+.about-info p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 0; 
+}
+
+.toggle-btn{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #263179;
+    border: none;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.toggle-btn:hover {
+    background-color: #1e275f;
+}
+
+
+
+
+
+.about-info1 {
+    background-color: #16191f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    position: relative;
+    color: white;
+}
+
+.about-info1::before,
+.about-info1::after {
+    content: "";
+    position: absolute;
+    inset: -0.5rem;
+    z-index: -1;
+    background: conic-gradient(
+        from var(--gradient-angle),
+        var(--clr-1),
+        var(--clr-2),
+        var(--clr-3),
+        var(--clr-4),
+        var(--clr-5),
+        var(--clr-6),
+        var(--clr-7)
+    );
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+}
+
+.about-info1::after {
+    filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+    0% {
+        --gradient-angle: 0deg;
+    }
+    100% {
+        --gradient-angle: 360deg;
+    }
+}
+
+
+.about-info1 h4 {
+    color: #329C4E;
+    margin-bottom: 10px;
+}
+
+.about-info1 p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 0; 
+}
